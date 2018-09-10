@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23633D512146389B009DB8FB /* readme.strings in Resources */ = {isa = PBXBuildFile; fileRef = 23633D502146389B009DB8FB /* readme.strings */; };
 		23CFFE3C2143CEF50038F28D /* JWCommonLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 23CFFE3A2143CEF50038F28D /* JWCommonLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		23CFFE432143CFBD0038F28D /* BaseUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CFFE422143CFBD0038F28D /* BaseUIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23633D502146389B009DB8FB /* readme.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = readme.strings; sourceTree = "<group>"; };
 		23CFFE372143CEF50038F28D /* JWCommonLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JWCommonLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23CFFE3A2143CEF50038F28D /* JWCommonLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWCommonLib.h; sourceTree = "<group>"; };
 		23CFFE3B2143CEF50038F28D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 				23CFFE442143CFC90038F28D /* Bases */,
 				23CFFE3A2143CEF50038F28D /* JWCommonLib.h */,
 				23CFFE3B2143CEF50038F28D /* Info.plist */,
+				23633D502146389B009DB8FB /* readme.strings */,
 			);
 			path = JWCommonLib;
 			sourceTree = "<group>";
@@ -132,6 +135,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23633D512146389B009DB8FB /* readme.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
