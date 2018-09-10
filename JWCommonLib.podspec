@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "JWCommonLib"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "library for managing useful codes and extension to use in all projects "
 
    s.description  = <<-DESC
