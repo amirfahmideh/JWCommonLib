@@ -5,7 +5,7 @@ class RoundedTextField:UITextField {
     var padding : UIEdgeInsets;
     
     required init?(coder aDecoder: NSCoder) {
-        self.padding = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        self.padding = UIEdgeInsets(top: 10, left: 0, bottom: 10, right: 0)
         super.init(coder: aDecoder)
     }
     @IBInspectable var borderWidth: CGFloat = 0 {
@@ -18,27 +18,6 @@ class RoundedTextField:UITextField {
             layer.cornerRadius = cornerRadius
         }
     }
-    @IBInspectable var topInset: CGFloat = 0 {
-        didSet {
-            padding.top = topInset
-        }
-    }
-    @IBInspectable var rightInset: CGFloat = 0 {
-        didSet {
-            padding.right = rightInset
-        }
-    }
-    @IBInspectable var bottomInset: CGFloat = 0 {
-        didSet {
-            padding.bottom  = bottomInset
-        }
-    }
-    @IBInspectable var leftInset: CGFloat = 0 {
-        didSet {
-            padding.left = leftInset
-            
-        }
-    }
     //Normal state bg and border
     @IBInspectable var normalBorderColor: UIColor? {
         didSet {
@@ -49,20 +28,22 @@ class RoundedTextField:UITextField {
     override func layoutSubviews() {
         super.layoutSubviews()
         clipsToBounds = true
+        
         if borderWidth > 0 {
             layer.borderColor = normalBorderColor?.cgColor
         }
     }
+    
+    override func textRect(forBounds bounds: CGRect) -> CGRect {
+        return UIEdgeInsetsInsetRect(bounds, padding)
+    }
+    
+    override func placeholderRect(forBounds bounds: CGRect) -> CGRect {
+        return UIEdgeInsetsInsetRect(bounds, padding)
+    }
+    
+    override func editingRect(forBounds bounds: CGRect) -> CGRect {
+        return UIEdgeInsetsInsetRect(bounds, padding)
+    }
 
-    override open func textRect(forBounds bounds: CGRect) -> CGRect {
-        return UIEdgeInsetsInsetRect(bounds, padding)
-    }
-    
-    override open func placeholderRect(forBounds bounds: CGRect) -> CGRect {
-        return UIEdgeInsetsInsetRect(bounds, padding)
-    }
-    
-    override open func editingRect(forBounds bounds: CGRect) -> CGRect {
-        return UIEdgeInsetsInsetRect(bounds, padding)
-    }
 }
