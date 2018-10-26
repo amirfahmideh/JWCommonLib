@@ -15,6 +15,7 @@
 		23633D6721465885009DB8FB /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23633D6621465885009DB8FB /* RoundedButton.swift */; };
 		23CFFE3C2143CEF50038F28D /* JWCommonLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 23CFFE3A2143CEF50038F28D /* JWCommonLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		23CFFE432143CFBD0038F28D /* BaseUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CFFE422143CFBD0038F28D /* BaseUIViewController.swift */; };
+		23E753C02182DB3C000AF331 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E753BF2182DB3B000AF331 /* Spinner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		23CFFE3A2143CEF50038F28D /* JWCommonLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWCommonLib.h; sourceTree = "<group>"; };
 		23CFFE3B2143CEF50038F28D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23CFFE422143CFBD0038F28D /* BaseUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUIViewController.swift; sourceTree = "<group>"; };
+		23E753BF2182DB3B000AF331 /* Spinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		23633D5A21465794009DB8FB /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				23E753BE2182DB1F000AF331 /* Spinner */,
 				23633D6521465871009DB8FB /* Button */,
 				23633D5E21465812009DB8FB /* TextView */,
 				23633D5B214657E9009DB8FB /* TextField */,
@@ -143,6 +146,14 @@
 				23CFFE422143CFBD0038F28D /* BaseUIViewController.swift */,
 			);
 			path = Bases;
+			sourceTree = "<group>";
+		};
+		23E753BE2182DB1F000AF331 /* Spinner */ = {
+			isa = PBXGroup;
+			children = (
+				23E753BF2182DB3B000AF331 /* Spinner.swift */,
+			);
+			path = Spinner;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +242,7 @@
 				23633D6721465885009DB8FB /* RoundedButton.swift in Sources */,
 				23633D5D21465806009DB8FB /* RoundedTextField.swift in Sources */,
 				23633D6021465824009DB8FB /* RoundedTextView.swift in Sources */,
+				23E753C02182DB3C000AF331 /* Spinner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
