@@ -14,9 +14,10 @@
 		23633D642146585F009DB8FB /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23633D632146585F009DB8FB /* ColorExtension.swift */; };
 		23633D6721465885009DB8FB /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23633D6621465885009DB8FB /* RoundedButton.swift */; };
 		238FC61C2184274800A87958 /* JWScrollview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238FC61B2184274800A87958 /* JWScrollview.swift */; };
+		238FC626218450C800A87958 /* JWSimpleMessageDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238FC625218450C800A87958 /* JWSimpleMessageDialog.swift */; };
 		23CFFE3C2143CEF50038F28D /* JWCommonLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 23CFFE3A2143CEF50038F28D /* JWCommonLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		23CFFE432143CFBD0038F28D /* BaseUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CFFE422143CFBD0038F28D /* BaseUIViewController.swift */; };
-		23E753C02182DB3C000AF331 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E753BF2182DB3B000AF331 /* Spinner.swift */; };
+		23E753C02182DB3C000AF331 /* JWSimpleSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E753BF2182DB3B000AF331 /* JWSimpleSpinner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,11 +28,12 @@
 		23633D632146585F009DB8FB /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		23633D6621465885009DB8FB /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		238FC61B2184274800A87958 /* JWScrollview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWScrollview.swift; sourceTree = "<group>"; };
+		238FC625218450C800A87958 /* JWSimpleMessageDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWSimpleMessageDialog.swift; sourceTree = "<group>"; };
 		23CFFE372143CEF50038F28D /* JWCommonLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JWCommonLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23CFFE3A2143CEF50038F28D /* JWCommonLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWCommonLib.h; sourceTree = "<group>"; };
 		23CFFE3B2143CEF50038F28D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23CFFE422143CFBD0038F28D /* BaseUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUIViewController.swift; sourceTree = "<group>"; };
-		23E753BF2182DB3B000AF331 /* Spinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		23E753BF2182DB3B000AF331 /* JWSimpleSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWSimpleSpinner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		23633D5A21465794009DB8FB /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				238FC624218450B100A87958 /* Dialog */,
 				238FC61A218426FE00A87958 /* Scrollview */,
 				23E753BE2182DB1F000AF331 /* Spinner */,
 				23633D6521465871009DB8FB /* Button */,
@@ -123,6 +126,14 @@
 			path = Scrollview;
 			sourceTree = "<group>";
 		};
+		238FC624218450B100A87958 /* Dialog */ = {
+			isa = PBXGroup;
+			children = (
+				238FC625218450C800A87958 /* JWSimpleMessageDialog.swift */,
+			);
+			path = Dialog;
+			sourceTree = "<group>";
+		};
 		23CFFE2D2143CEF50038F28D = {
 			isa = PBXGroup;
 			children = (
@@ -162,7 +173,7 @@
 		23E753BE2182DB1F000AF331 /* Spinner */ = {
 			isa = PBXGroup;
 			children = (
-				23E753BF2182DB3B000AF331 /* Spinner.swift */,
+				23E753BF2182DB3B000AF331 /* JWSimpleSpinner.swift */,
 			);
 			path = Spinner;
 			sourceTree = "<group>";
@@ -253,8 +264,9 @@
 				23633D6721465885009DB8FB /* RoundedButton.swift in Sources */,
 				23633D5D21465806009DB8FB /* RoundedTextField.swift in Sources */,
 				238FC61C2184274800A87958 /* JWScrollview.swift in Sources */,
+				238FC626218450C800A87958 /* JWSimpleMessageDialog.swift in Sources */,
 				23633D6021465824009DB8FB /* RoundedTextView.swift in Sources */,
-				23E753C02182DB3C000AF331 /* Spinner.swift in Sources */,
+				23E753C02182DB3C000AF331 /* JWSimpleSpinner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,8 +7,8 @@
 //
 
 import UIKit
-class JWScrollview : UIScrollView{
-    override func layoutSubviews() {
+public class JWScrollview : UIScrollView{
+    override public func layoutSubviews() {
         super.layoutSubviews()
         super.keyboardDismissMode = .onDrag
     }
