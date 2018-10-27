@@ -22,9 +22,14 @@ public class JWSimpleSpinner{
         UIApplication.shared.beginIgnoringInteractionEvents()
         return spinner
     }
+    public static func CreateInstance(widthAndHeight:Int) -> UIActivityIndicatorView {
+        //Customize as per your need
+        let spinner = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: widthAndHeight, height:widthAndHeight))
+        return spinner
+    }
 }
 
-extension UIActivityIndicatorView {
+public extension UIActivityIndicatorView {
     func dismissLoader() {
         self.stopAnimating()
         UIApplication.shared.endIgnoringInteractionEvents()

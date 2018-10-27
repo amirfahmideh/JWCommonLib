@@ -8,11 +8,14 @@
 
 import UIKit
 open class BaseUIViewController:UIViewController {
+    public var MoveOnKeyboardShow:Bool = true;
+    
     override open func viewDidLoad() {
         super.viewDidLoad()
-        
+        if(MoveOnKeyboardShow){
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: self.view.window)
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: self.view.window)
+        }
     }
     override open func viewWillAppear (_ animated: Bool){
         super.viewWillAppear(false)
