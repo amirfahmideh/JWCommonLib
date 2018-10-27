@@ -13,6 +13,7 @@
 		23633D6021465824009DB8FB /* RoundedTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23633D5F21465824009DB8FB /* RoundedTextView.swift */; };
 		23633D642146585F009DB8FB /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23633D632146585F009DB8FB /* ColorExtension.swift */; };
 		23633D6721465885009DB8FB /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23633D6621465885009DB8FB /* RoundedButton.swift */; };
+		238FC61C2184274800A87958 /* JWScrollview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238FC61B2184274800A87958 /* JWScrollview.swift */; };
 		23CFFE3C2143CEF50038F28D /* JWCommonLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 23CFFE3A2143CEF50038F28D /* JWCommonLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		23CFFE432143CFBD0038F28D /* BaseUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CFFE422143CFBD0038F28D /* BaseUIViewController.swift */; };
 		23E753C02182DB3C000AF331 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E753BF2182DB3B000AF331 /* Spinner.swift */; };
@@ -25,6 +26,7 @@
 		23633D5F21465824009DB8FB /* RoundedTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedTextView.swift; sourceTree = "<group>"; };
 		23633D632146585F009DB8FB /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		23633D6621465885009DB8FB /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		238FC61B2184274800A87958 /* JWScrollview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWScrollview.swift; sourceTree = "<group>"; };
 		23CFFE372143CEF50038F28D /* JWCommonLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JWCommonLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23CFFE3A2143CEF50038F28D /* JWCommonLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWCommonLib.h; sourceTree = "<group>"; };
 		23CFFE3B2143CEF50038F28D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 		23633D5A21465794009DB8FB /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				238FC61A218426FE00A87958 /* Scrollview */,
 				23E753BE2182DB1F000AF331 /* Spinner */,
 				23633D6521465871009DB8FB /* Button */,
 				23633D5E21465812009DB8FB /* TextView */,
@@ -110,6 +113,14 @@
 				23633D6621465885009DB8FB /* RoundedButton.swift */,
 			);
 			path = Button;
+			sourceTree = "<group>";
+		};
+		238FC61A218426FE00A87958 /* Scrollview */ = {
+			isa = PBXGroup;
+			children = (
+				238FC61B2184274800A87958 /* JWScrollview.swift */,
+			);
+			path = Scrollview;
 			sourceTree = "<group>";
 		};
 		23CFFE2D2143CEF50038F28D = {
@@ -241,6 +252,7 @@
 				23633D642146585F009DB8FB /* ColorExtension.swift in Sources */,
 				23633D6721465885009DB8FB /* RoundedButton.swift in Sources */,
 				23633D5D21465806009DB8FB /* RoundedTextField.swift in Sources */,
+				238FC61C2184274800A87958 /* JWScrollview.swift in Sources */,
 				23633D6021465824009DB8FB /* RoundedTextView.swift in Sources */,
 				23E753C02182DB3C000AF331 /* Spinner.swift in Sources */,
 			);

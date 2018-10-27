@@ -2,12 +2,6 @@ import UIKit
 
 @IBDesignable
 class RoundedTextField:UITextField {
-    var padding : UIEdgeInsets;
-    
-    required init?(coder aDecoder: NSCoder) {
-        self.padding = UIEdgeInsets(top: 10, left: 0, bottom: 10, right: 0)
-        super.init(coder: aDecoder)
-    }
     @IBInspectable var borderWidth: CGFloat = 0 {
         didSet {
             layer.borderWidth = borderWidth
@@ -33,7 +27,7 @@ class RoundedTextField:UITextField {
             layer.borderColor = normalBorderColor?.cgColor
         }
     }
-    
+    var padding = UIEdgeInsets(top:10,left:10,bottom:10,right:10)
     override func textRect(forBounds bounds: CGRect) -> CGRect {
         return UIEdgeInsetsInsetRect(bounds, padding)
     }
