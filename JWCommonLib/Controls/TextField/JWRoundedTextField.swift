@@ -1,7 +1,7 @@
 import UIKit
 
 @IBDesignable
-class RoundedTextField:UITextField {
+class JWRoundedTextField:UITextField {
     @IBInspectable var borderWidth: CGFloat = 0 {
         didSet {
             layer.borderWidth = borderWidth

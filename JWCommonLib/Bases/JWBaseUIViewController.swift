@@ -7,7 +7,7 @@
 //
 
 import UIKit
-open class BaseUIViewController:UIViewController {
+open class JWBaseUIViewController:UIViewController {
     public var MoveOnKeyboardShow:Bool = true;
     
     override open func viewDidLoad() {
