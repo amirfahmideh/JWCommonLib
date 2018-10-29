@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		230DF94A2187AF0C00DC15DF /* JWSimpleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230DF9492187AF0C00DC15DF /* JWSimpleTableViewController.swift */; };
 		23633D56214656E3009DB8FB /* PersianDateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23633D55214656E3009DB8FB /* PersianDateTime.swift */; };
 		23633D5921465765009DB8FB /* ToENNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23633D5821465765009DB8FB /* ToENNumbers.swift */; };
 		23633D5D21465806009DB8FB /* JWRoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23633D5C21465806009DB8FB /* JWRoundedTextField.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		230DF9492187AF0C00DC15DF /* JWSimpleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWSimpleTableViewController.swift; sourceTree = "<group>"; };
 		23633D55214656E3009DB8FB /* PersianDateTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersianDateTime.swift; sourceTree = "<group>"; };
 		23633D5821465765009DB8FB /* ToENNumbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToENNumbers.swift; sourceTree = "<group>"; };
 		23633D5C21465806009DB8FB /* JWRoundedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWRoundedTextField.swift; sourceTree = "<group>"; };
@@ -49,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		230DF9482187AEE600DC15DF /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				230DF9492187AF0C00DC15DF /* JWSimpleTableViewController.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
 		23633D5221465651009DB8FB /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +88,7 @@
 		23633D5A21465794009DB8FB /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				230DF9482187AEE600DC15DF /* TableView */,
 				237A293F2186E91C009AAB98 /* Switch */,
 				238FC624218450B100A87958 /* Dialog */,
 				238FC61A218426FE00A87958 /* Scrollview */,
@@ -268,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				230DF94A2187AF0C00DC15DF /* JWSimpleTableViewController.swift in Sources */,
 				23633D5921465765009DB8FB /* ToENNumbers.swift in Sources */,
 				23CFFE432143CFBD0038F28D /* JWBaseUIViewController.swift in Sources */,
 				23633D56214656E3009DB8FB /* PersianDateTime.swift in Sources */,
