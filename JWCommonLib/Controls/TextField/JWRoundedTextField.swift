@@ -1,25 +1,25 @@
 import UIKit
 
 @IBDesignable
-class JWRoundedTextField:UITextField {
-    @IBInspectable var borderWidth: CGFloat = 0 {
+open class JWRoundedTextField:UITextField {
+    @IBInspectable open var borderWidth: CGFloat = 0 {
         didSet {
             layer.borderWidth = borderWidth
         }
     }
-    @IBInspectable var cornerRadius: CGFloat = 0 {
+    @IBInspectable open var cornerRadius: CGFloat = 0 {
         didSet {
             layer.cornerRadius = cornerRadius
         }
     }
     //Normal state bg and border
-    @IBInspectable var normalBorderColor: UIColor? {
+    @IBInspectable open var normalBorderColor: UIColor? {
         didSet {
             layer.borderColor = normalBorderColor?.cgColor
         }
     }
     
-    override func layoutSubviews() {
+    override open func layoutSubviews() {
         super.layoutSubviews()
         clipsToBounds = true
         
@@ -28,15 +28,15 @@ class JWRoundedTextField:UITextField {
         }
     }
     var padding = UIEdgeInsets(top:10,left:10,bottom:10,right:10)
-    override func textRect(forBounds bounds: CGRect) -> CGRect {
+    override open func textRect(forBounds bounds: CGRect) -> CGRect {
         return UIEdgeInsetsInsetRect(bounds, padding)
     }
     
-    override func placeholderRect(forBounds bounds: CGRect) -> CGRect {
+    override open func placeholderRect(forBounds bounds: CGRect) -> CGRect {
         return UIEdgeInsetsInsetRect(bounds, padding)
     }
     
-    override func editingRect(forBounds bounds: CGRect) -> CGRect {
+    override open func editingRect(forBounds bounds: CGRect) -> CGRect {
         return UIEdgeInsetsInsetRect(bounds, padding)
     }
 

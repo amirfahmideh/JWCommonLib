@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		230DF94A2187AF0C00DC15DF /* JWSimpleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230DF9492187AF0C00DC15DF /* JWSimpleTableViewController.swift */; };
+		233EE9F82188772E00EC1844 /* JWLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233EE9F72188772E00EC1844 /* JWLabel.swift */; };
 		23633D56214656E3009DB8FB /* PersianDateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23633D55214656E3009DB8FB /* PersianDateTime.swift */; };
 		23633D5921465765009DB8FB /* ToENNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23633D5821465765009DB8FB /* ToENNumbers.swift */; };
 		23633D5D21465806009DB8FB /* JWRoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23633D5C21465806009DB8FB /* JWRoundedTextField.swift */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		230DF9492187AF0C00DC15DF /* JWSimpleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWSimpleTableViewController.swift; sourceTree = "<group>"; };
+		233EE9F72188772E00EC1844 /* JWLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWLabel.swift; sourceTree = "<group>"; };
 		23633D55214656E3009DB8FB /* PersianDateTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersianDateTime.swift; sourceTree = "<group>"; };
 		23633D5821465765009DB8FB /* ToENNumbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToENNumbers.swift; sourceTree = "<group>"; };
 		23633D5C21465806009DB8FB /* JWRoundedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWRoundedTextField.swift; sourceTree = "<group>"; };
@@ -59,6 +61,14 @@
 			path = TableView;
 			sourceTree = "<group>";
 		};
+		233EE9F62188771800EC1844 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				233EE9F72188772E00EC1844 /* JWLabel.swift */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
 		23633D5221465651009DB8FB /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +98,7 @@
 		23633D5A21465794009DB8FB /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				233EE9F62188771800EC1844 /* Label */,
 				230DF9482187AEE600DC15DF /* TableView */,
 				237A293F2186E91C009AAB98 /* Switch */,
 				238FC624218450B100A87958 /* Dialog */,
@@ -291,6 +302,7 @@
 				238FC626218450C800A87958 /* JWSimpleMessageDialog.swift in Sources */,
 				23633D6021465824009DB8FB /* JWRoundedTextView.swift in Sources */,
 				23E753C02182DB3C000AF331 /* JWSimpleSpinner.swift in Sources */,
+				233EE9F82188772E00EC1844 /* JWLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
