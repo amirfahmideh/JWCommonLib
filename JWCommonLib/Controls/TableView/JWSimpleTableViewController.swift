@@ -10,6 +10,7 @@ import UIKit
 open class JWSimpleTableViewController : UITableViewController
 {
     public var AddNewItemSegueIdentifier : String = ""
+    public var ShowDetailesSegueIdentifier : String = ""
     public var IsTableViewEditEnable : Bool = true
     public var NumberOfTableViewSection : Int = 1
     
