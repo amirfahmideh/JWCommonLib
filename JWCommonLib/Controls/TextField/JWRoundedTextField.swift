@@ -26,18 +26,7 @@ open class JWRoundedTextField:UITextField {
         if borderWidth > 0 {
             layer.borderColor = normalBorderColor?.cgColor
         }
-    }
-    var padding = UIEdgeInsets(top:10,left:10,bottom:10,right:10)
-    override open func textRect(forBounds bounds: CGRect) -> CGRect {
-        return UIEdgeInsetsInsetRect(bounds, padding)
-    }
-    
-    override open func placeholderRect(forBounds bounds: CGRect) -> CGRect {
-        return UIEdgeInsetsInsetRect(bounds, padding)
-    }
-    
-    override open func editingRect(forBounds bounds: CGRect) -> CGRect {
-        return UIEdgeInsetsInsetRect(bounds, padding)
+        
     }
 
 }
