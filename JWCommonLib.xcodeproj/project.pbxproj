@@ -18,8 +18,12 @@
 		237A29412186E934009AAB98 /* JWSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237A29402186E934009AAB98 /* JWSwitch.swift */; };
 		238FC61C2184274800A87958 /* JWScrollview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238FC61B2184274800A87958 /* JWScrollview.swift */; };
 		238FC626218450C800A87958 /* JWSimpleMessageDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238FC625218450C800A87958 /* JWSimpleMessageDialog.swift */; };
+		239D4FB92196A58F0085DBFA /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239D4FB82196A58E0085DBFA /* ImageHelper.swift */; };
 		23CFFE3C2143CEF50038F28D /* JWCommonLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 23CFFE3A2143CEF50038F28D /* JWCommonLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		23CFFE432143CFBD0038F28D /* JWBaseUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CFFE422143CFBD0038F28D /* JWBaseUIViewController.swift */; };
+		23DB9EAE2196A3EA0005F0E1 /* EXTUIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DB9EAB2196A3EA0005F0E1 /* EXTUIImage.swift */; };
+		23DB9EAF2196A3EA0005F0E1 /* JpegResize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DB9EAC2196A3EA0005F0E1 /* JpegResize.swift */; };
+		23DB9EB02196A3EA0005F0E1 /* MimeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DB9EAD2196A3EA0005F0E1 /* MimeType.swift */; };
 		23E753C02182DB3C000AF331 /* JWSimpleSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E753BF2182DB3B000AF331 /* JWSimpleSpinner.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,10 +39,14 @@
 		237A29402186E934009AAB98 /* JWSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWSwitch.swift; sourceTree = "<group>"; };
 		238FC61B2184274800A87958 /* JWScrollview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWScrollview.swift; sourceTree = "<group>"; };
 		238FC625218450C800A87958 /* JWSimpleMessageDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWSimpleMessageDialog.swift; sourceTree = "<group>"; };
+		239D4FB82196A58E0085DBFA /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		23CFFE372143CEF50038F28D /* JWCommonLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JWCommonLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23CFFE3A2143CEF50038F28D /* JWCommonLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWCommonLib.h; sourceTree = "<group>"; };
 		23CFFE3B2143CEF50038F28D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23CFFE422143CFBD0038F28D /* JWBaseUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWBaseUIViewController.swift; sourceTree = "<group>"; };
+		23DB9EAB2196A3EA0005F0E1 /* EXTUIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EXTUIImage.swift; sourceTree = "<group>"; };
+		23DB9EAC2196A3EA0005F0E1 /* JpegResize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JpegResize.swift; sourceTree = "<group>"; };
+		23DB9EAD2196A3EA0005F0E1 /* MimeType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MimeType.swift; sourceTree = "<group>"; };
 		23E753BF2182DB3B000AF331 /* JWSimpleSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWSimpleSpinner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -186,6 +194,7 @@
 		23CFFE392143CEF50038F28D /* JWCommonLib */ = {
 			isa = PBXGroup;
 			children = (
+				23DB9EAA2196A3CB0005F0E1 /* Images */,
 				23633D5A21465794009DB8FB /* Controls */,
 				23633D5221465651009DB8FB /* Extension */,
 				23CFFE442143CFC90038F28D /* Bases */,
@@ -201,6 +210,18 @@
 				23CFFE422143CFBD0038F28D /* JWBaseUIViewController.swift */,
 			);
 			path = Bases;
+			sourceTree = "<group>";
+		};
+		23DB9EAA2196A3CB0005F0E1 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				23DB9EAB2196A3EA0005F0E1 /* EXTUIImage.swift */,
+				23DB9EAC2196A3EA0005F0E1 /* JpegResize.swift */,
+				23DB9EAD2196A3EA0005F0E1 /* MimeType.swift */,
+				239D4FB82196A58E0085DBFA /* ImageHelper.swift */,
+			);
+			name = Images;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		23E753BE2182DB1F000AF331 /* Spinner */ = {
@@ -293,8 +314,11 @@
 				230DF94A2187AF0C00DC15DF /* JWSimpleTableViewController.swift in Sources */,
 				23633D5921465765009DB8FB /* ToENNumbers.swift in Sources */,
 				23CFFE432143CFBD0038F28D /* JWBaseUIViewController.swift in Sources */,
+				23DB9EB02196A3EA0005F0E1 /* MimeType.swift in Sources */,
 				23633D56214656E3009DB8FB /* PersianDateTime.swift in Sources */,
 				23633D642146585F009DB8FB /* ColorExtension.swift in Sources */,
+				23DB9EAE2196A3EA0005F0E1 /* EXTUIImage.swift in Sources */,
+				23DB9EAF2196A3EA0005F0E1 /* JpegResize.swift in Sources */,
 				23633D6721465885009DB8FB /* JWRoundedButton.swift in Sources */,
 				237A29412186E934009AAB98 /* JWSwitch.swift in Sources */,
 				23633D5D21465806009DB8FB /* JWRoundedTextField.swift in Sources */,
@@ -303,6 +327,7 @@
 				23633D6021465824009DB8FB /* JWRoundedTextView.swift in Sources */,
 				23E753C02182DB3C000AF331 /* JWSimpleSpinner.swift in Sources */,
 				233EE9F82188772E00EC1844 /* JWLabel.swift in Sources */,
+				239D4FB92196A58F0085DBFA /* ImageHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
