@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		230DF94A2187AF0C00DC15DF /* JWSimpleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230DF9492187AF0C00DC15DF /* JWSimpleTableViewController.swift */; };
 		233EE9F82188772E00EC1844 /* JWLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233EE9F72188772E00EC1844 /* JWLabel.swift */; };
+		23558415219A99E40074A68E /* EFImageViewZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23558414219A99E40074A68E /* EFImageViewZoom.swift */; };
 		23633D56214656E3009DB8FB /* PersianDateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23633D55214656E3009DB8FB /* PersianDateTime.swift */; };
 		23633D5921465765009DB8FB /* ToENNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23633D5821465765009DB8FB /* ToENNumbers.swift */; };
 		23633D5D21465806009DB8FB /* JWRoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23633D5C21465806009DB8FB /* JWRoundedTextField.swift */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		230DF9492187AF0C00DC15DF /* JWSimpleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWSimpleTableViewController.swift; sourceTree = "<group>"; };
 		233EE9F72188772E00EC1844 /* JWLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWLabel.swift; sourceTree = "<group>"; };
+		23558414219A99E40074A68E /* EFImageViewZoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EFImageViewZoom.swift; sourceTree = "<group>"; };
 		23633D55214656E3009DB8FB /* PersianDateTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersianDateTime.swift; sourceTree = "<group>"; };
 		23633D5821465765009DB8FB /* ToENNumbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToENNumbers.swift; sourceTree = "<group>"; };
 		23633D5C21465806009DB8FB /* JWRoundedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWRoundedTextField.swift; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 		23DB9EAA2196A3CB0005F0E1 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				23558414219A99E40074A68E /* EFImageViewZoom.swift */,
 				23DB9EAB2196A3EA0005F0E1 /* EXTUIImage.swift */,
 				23DB9EAC2196A3EA0005F0E1 /* JpegResize.swift */,
 				23DB9EAD2196A3EA0005F0E1 /* MimeType.swift */,
@@ -313,6 +316,7 @@
 			files = (
 				230DF94A2187AF0C00DC15DF /* JWSimpleTableViewController.swift in Sources */,
 				23633D5921465765009DB8FB /* ToENNumbers.swift in Sources */,
+				23558415219A99E40074A68E /* EFImageViewZoom.swift in Sources */,
 				23CFFE432143CFBD0038F28D /* JWBaseUIViewController.swift in Sources */,
 				23DB9EB02196A3EA0005F0E1 /* MimeType.swift in Sources */,
 				23633D56214656E3009DB8FB /* PersianDateTime.swift in Sources */,

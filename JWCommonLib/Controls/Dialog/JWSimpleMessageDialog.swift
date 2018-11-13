@@ -55,7 +55,36 @@ public class JWSimpleMessageDialog{
         
         let cancelAction = UIAlertAction(
             title: "انصراف",
-            style:.default,
+            style:.cancel,
+            handler:{(_)in
+                alertVC.dismiss(animated: true, completion: nil)
+        })
+        
+        alertVC.addAction(cancelAction)
+        alertVC.addAction(okAction)
+        
+        base.present(
+            alertVC,
+            animated: true,
+            completion: nil)
+    }
+    public static func JWShowMessageRemoveConfirm(base: UIViewController,title:String,message:String,onRemoveHandler: ((UIAlertAction) -> Void)?){
+        let alertVC = UIAlertController(
+            title: title,
+            message: message,
+            preferredStyle: .actionSheet)
+        
+        
+        
+        let okAction = UIAlertAction(
+            title: "حذف",
+            style:.destructive,
+            handler: onRemoveHandler)
+        
+        
+        let cancelAction = UIAlertAction(
+            title: "انصراف",
+            style:.cancel,
             handler:{(_)in
                 alertVC.dismiss(animated: true, completion: nil)
         })
