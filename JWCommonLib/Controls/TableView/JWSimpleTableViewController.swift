@@ -12,6 +12,7 @@ open class JWSimpleTableViewController : UITableViewController
     public var AddNewItemSegueIdentifier : String = ""
     public var ShowDetailesSegueIdentifier : String = ""
     public var IsTableViewEditEnable : Bool = true
+    public var DeleteButtonTitle : String?
     public var NumberOfTableViewSection : Int = 1
     
     override open func viewDidLoad() {
@@ -24,7 +25,7 @@ open class JWSimpleTableViewController : UITableViewController
         }
         if(IsTableViewEditEnable){
             let editButton  =
-                UIBarButtonItem(title: "حذف", style: UIBarButtonItemStyle.plain, target: self, action: #selector(onTableViewEditMode(sender:)))
+                UIBarButtonItem(title:DeleteButtonTitle ?? "حذف", style: UIBarButtonItemStyle.plain, target: self, action: #selector(onTableViewEditMode(sender:)))
             rightBarItems.append(editButton)
         }
         self.navigationItem.rightBarButtonItems = rightBarItems
@@ -36,7 +37,7 @@ open class JWSimpleTableViewController : UITableViewController
     
     override open func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String?
     {
-        return "حذف"
+        return DeleteButtonTitle ?? "حذف"
     }
     
     @objc func onAddNewItem(sender:Any){
@@ -45,7 +46,7 @@ open class JWSimpleTableViewController : UITableViewController
     
     @objc func onTableViewEditMode(sender:UIBarButtonItem){
         if(self.tableView.isEditing){
-            sender.title = "حذف"
+            sender.title = DeleteButtonTitle ?? "حذف"
             self.tableView.setEditing(false, animated: true)
         }
         else {
