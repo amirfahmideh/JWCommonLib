@@ -1,7 +1,7 @@
 import UIKit
 
 @IBDesignable
-class JWRoundedButton:UIButton {
+open class JWRoundedButton:UIButton {
     @IBInspectable var cornerRadius: CGFloat = 4 {
         didSet {
             layer.cornerRadius = cornerRadius
@@ -45,7 +45,7 @@ class JWRoundedButton:UIButton {
         }
     }
     
-    override func layoutSubviews() {
+    override open func layoutSubviews() {
         super.layoutSubviews()
         
         //layer.cornerRadius = layer.frame.height / 4

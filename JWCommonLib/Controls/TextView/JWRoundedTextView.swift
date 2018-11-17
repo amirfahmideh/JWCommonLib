@@ -1,7 +1,7 @@
 import UIKit
 
 @IBDesignable
-class JWRoundedTextView:UITextView {
+open class JWRoundedTextView:UITextView {
     @IBInspectable var borderWidth: CGFloat = 0 {
         didSet {
             layer.borderWidth = borderWidth
@@ -18,7 +18,7 @@ class JWRoundedTextView:UITextView {
             layer.borderColor = normalBorderColor?.cgColor
         }
     }
-    override func layoutSubviews() {
+    override open func layoutSubviews() {
         super.layoutSubviews()
         clipsToBounds = true
         if borderWidth > 0 {
