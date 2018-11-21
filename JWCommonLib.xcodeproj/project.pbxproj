@@ -11,6 +11,7 @@
 		233EE9F82188772E00EC1844 /* JWLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233EE9F72188772E00EC1844 /* JWLabel.swift */; };
 		23446554219D3F2F0055AFB4 /* JWPersianDatepicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23446553219D3F2F0055AFB4 /* JWPersianDatepicker.swift */; };
 		23558415219A99E40074A68E /* EFImageViewZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23558414219A99E40074A68E /* EFImageViewZoom.swift */; };
+		235BDD8721A52BD70034A5EB /* PersianNumberExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235BDD8621A52BD70034A5EB /* PersianNumberExtension.swift */; };
 		23633D56214656E3009DB8FB /* PersianDateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23633D55214656E3009DB8FB /* PersianDateTime.swift */; };
 		23633D5921465765009DB8FB /* ToENNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23633D5821465765009DB8FB /* ToENNumbers.swift */; };
 		23633D5D21465806009DB8FB /* JWRoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23633D5C21465806009DB8FB /* JWRoundedTextField.swift */; };
@@ -34,6 +35,7 @@
 		233EE9F72188772E00EC1844 /* JWLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWLabel.swift; sourceTree = "<group>"; };
 		23446553219D3F2F0055AFB4 /* JWPersianDatepicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWPersianDatepicker.swift; sourceTree = "<group>"; };
 		23558414219A99E40074A68E /* EFImageViewZoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EFImageViewZoom.swift; sourceTree = "<group>"; };
+		235BDD8621A52BD70034A5EB /* PersianNumberExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersianNumberExtension.swift; sourceTree = "<group>"; };
 		23633D55214656E3009DB8FB /* PersianDateTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersianDateTime.swift; sourceTree = "<group>"; };
 		23633D5821465765009DB8FB /* ToENNumbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToENNumbers.swift; sourceTree = "<group>"; };
 		23633D5C21465806009DB8FB /* JWRoundedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWRoundedTextField.swift; sourceTree = "<group>"; };
@@ -89,9 +91,18 @@
 			path = Datepicker;
 			sourceTree = "<group>";
 		};
+		235BDD8521A52B890034A5EB /* Number */ = {
+			isa = PBXGroup;
+			children = (
+				235BDD8621A52BD70034A5EB /* PersianNumberExtension.swift */,
+			);
+			path = Number;
+			sourceTree = "<group>";
+		};
 		23633D5221465651009DB8FB /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				235BDD8521A52B890034A5EB /* Number */,
 				23633D622146584E009DB8FB /* Color */,
 				23633D5721465753009DB8FB /* String */,
 				23633D54214656CC009DB8FB /* DateTime */,
@@ -332,6 +343,7 @@
 				23CFFE432143CFBD0038F28D /* JWBaseUIViewController.swift in Sources */,
 				23DB9EB02196A3EA0005F0E1 /* MimeType.swift in Sources */,
 				23633D56214656E3009DB8FB /* PersianDateTime.swift in Sources */,
+				235BDD8721A52BD70034A5EB /* PersianNumberExtension.swift in Sources */,
 				23633D642146585F009DB8FB /* ColorExtension.swift in Sources */,
 				23DB9EAE2196A3EA0005F0E1 /* EXTUIImage.swift in Sources */,
 				23DB9EAF2196A3EA0005F0E1 /* JpegResize.swift in Sources */,
