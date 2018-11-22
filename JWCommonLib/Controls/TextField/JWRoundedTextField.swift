@@ -41,4 +41,5 @@ open class JWRoundedTextField:UITextField {
     override open func editingRect(forBounds bounds: CGRect) -> CGRect {
         return UIEdgeInsetsInsetRect(bounds, padding)
     }
+    
 }
