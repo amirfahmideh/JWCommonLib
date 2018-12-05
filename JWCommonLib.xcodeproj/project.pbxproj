@@ -11,6 +11,7 @@
 		233EE9F82188772E00EC1844 /* JWLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233EE9F72188772E00EC1844 /* JWLabel.swift */; };
 		23446554219D3F2F0055AFB4 /* JWPersianDatepicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23446553219D3F2F0055AFB4 /* JWPersianDatepicker.swift */; };
 		23558415219A99E40074A68E /* EFImageViewZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23558414219A99E40074A68E /* EFImageViewZoom.swift */; };
+		2358522021B7E45100A4CEA6 /* Base64Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2358521F21B7E45100A4CEA6 /* Base64Image.swift */; };
 		235BDD8721A52BD70034A5EB /* PersianNumberExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235BDD8621A52BD70034A5EB /* PersianNumberExtension.swift */; };
 		23633D56214656E3009DB8FB /* PersianDateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23633D55214656E3009DB8FB /* PersianDateTime.swift */; };
 		23633D5921465765009DB8FB /* ToENNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23633D5821465765009DB8FB /* ToENNumbers.swift */; };
@@ -22,7 +23,6 @@
 		238FC61C2184274800A87958 /* JWScrollview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238FC61B2184274800A87958 /* JWScrollview.swift */; };
 		238FC626218450C800A87958 /* JWSimpleMessageDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238FC625218450C800A87958 /* JWSimpleMessageDialog.swift */; };
 		239D4FB92196A58F0085DBFA /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239D4FB82196A58E0085DBFA /* ImageHelper.swift */; };
-		23CFFE3C2143CEF50038F28D /* JWCommonLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 23CFFE3A2143CEF50038F28D /* JWCommonLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		23CFFE432143CFBD0038F28D /* JWBaseUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CFFE422143CFBD0038F28D /* JWBaseUIViewController.swift */; };
 		23DB9EAE2196A3EA0005F0E1 /* EXTUIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DB9EAB2196A3EA0005F0E1 /* EXTUIImage.swift */; };
 		23DB9EAF2196A3EA0005F0E1 /* JpegResize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DB9EAC2196A3EA0005F0E1 /* JpegResize.swift */; };
@@ -35,6 +35,7 @@
 		233EE9F72188772E00EC1844 /* JWLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWLabel.swift; sourceTree = "<group>"; };
 		23446553219D3F2F0055AFB4 /* JWPersianDatepicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWPersianDatepicker.swift; sourceTree = "<group>"; };
 		23558414219A99E40074A68E /* EFImageViewZoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EFImageViewZoom.swift; sourceTree = "<group>"; };
+		2358521F21B7E45100A4CEA6 /* Base64Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Base64Image.swift; path = JWCommonLib/Images/Base64Image.swift; sourceTree = SOURCE_ROOT; };
 		235BDD8621A52BD70034A5EB /* PersianNumberExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersianNumberExtension.swift; sourceTree = "<group>"; };
 		23633D55214656E3009DB8FB /* PersianDateTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersianDateTime.swift; sourceTree = "<group>"; };
 		23633D5821465765009DB8FB /* ToENNumbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToENNumbers.swift; sourceTree = "<group>"; };
@@ -47,7 +48,6 @@
 		238FC625218450C800A87958 /* JWSimpleMessageDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWSimpleMessageDialog.swift; sourceTree = "<group>"; };
 		239D4FB82196A58E0085DBFA /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		23CFFE372143CEF50038F28D /* JWCommonLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JWCommonLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		23CFFE3A2143CEF50038F28D /* JWCommonLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWCommonLib.h; sourceTree = "<group>"; };
 		23CFFE3B2143CEF50038F28D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23CFFE422143CFBD0038F28D /* JWBaseUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWBaseUIViewController.swift; sourceTree = "<group>"; };
 		23DB9EAB2196A3EA0005F0E1 /* EXTUIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EXTUIImage.swift; sourceTree = "<group>"; };
@@ -222,7 +222,6 @@
 				23633D5A21465794009DB8FB /* Controls */,
 				23633D5221465651009DB8FB /* Extension */,
 				23CFFE442143CFC90038F28D /* Bases */,
-				23CFFE3A2143CEF50038F28D /* JWCommonLib.h */,
 				23CFFE3B2143CEF50038F28D /* Info.plist */,
 			);
 			path = JWCommonLib;
@@ -239,6 +238,7 @@
 		23DB9EAA2196A3CB0005F0E1 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				2358521F21B7E45100A4CEA6 /* Base64Image.swift */,
 				23558414219A99E40074A68E /* EFImageViewZoom.swift */,
 				23DB9EAB2196A3EA0005F0E1 /* EXTUIImage.swift */,
 				23DB9EAC2196A3EA0005F0E1 /* JpegResize.swift */,
@@ -264,7 +264,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23CFFE3C2143CEF50038F28D /* JWCommonLib.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2358522021B7E45100A4CEA6 /* Base64Image.swift in Sources */,
 				230DF94A2187AF0C00DC15DF /* JWSimpleTableViewController.swift in Sources */,
 				23633D5921465765009DB8FB /* ToENNumbers.swift in Sources */,
 				23558415219A99E40074A68E /* EFImageViewZoom.swift in Sources */,
@@ -504,7 +504,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -530,7 +530,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = whiz.ir.JWCommonLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

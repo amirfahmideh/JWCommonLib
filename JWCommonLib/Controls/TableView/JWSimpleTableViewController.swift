@@ -25,7 +25,7 @@ open class JWSimpleTableViewController : UITableViewController
         }
         if(IsTableViewEditEnable){
             let editButton  =
-                UIBarButtonItem(title:DeleteButtonTitle ?? "حذف", style: UIBarButtonItemStyle.plain, target: self, action: #selector(onTableViewEditMode(sender:)))
+                UIBarButtonItem(title:DeleteButtonTitle ?? "حذف", style: UIBarButtonItem.Style.plain, target: self, action: #selector(onTableViewEditMode(sender:)))
             rightBarItems.append(editButton)
         }
         self.navigationItem.rightBarButtonItems = rightBarItems

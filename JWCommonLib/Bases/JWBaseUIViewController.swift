@@ -19,9 +19,9 @@ open class JWBaseUIViewController:UIViewController {
         findScrollView(of: self.view)
         
         if(MoveOnKeyboardShow){
-            NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: self.view.window)
+            NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: self.view.window)
             
-            NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: self.view.window)
+            NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: self.view.window)
         }
     }
     override open func viewWillAppear (_ animated: Bool){
@@ -29,7 +29,7 @@ open class JWBaseUIViewController:UIViewController {
     }
     
     @objc func keyboardWillShow(notification: NSNotification) {
-        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
             self.oldOrigin = self.view.frame.origin.y
             if self.isFindedScrollView {
                 self.findedScrollView!.contentInset.bottom = keyboardSize.height

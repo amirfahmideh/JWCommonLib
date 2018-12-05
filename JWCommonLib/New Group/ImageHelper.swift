@@ -13,7 +13,7 @@ public class ImageHelper {
     // Convert String to base64
     //
     public static func convertImageToBase64(image: UIImage) -> String {
-        let imageData = UIImagePNGRepresentation(image)!
+        let imageData = image.pngData()!
         return imageData.base64EncodedString()
     }
     //

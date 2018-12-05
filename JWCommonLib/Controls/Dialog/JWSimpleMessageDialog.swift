@@ -1,7 +1,7 @@
 import UIKit
 
 public class JWSimpleMessageDialog{
-    static let Style:UIAlertControllerStyle = .alert
+    static let Style:UIAlertController.Style = .alert
     public static func JWShowMessage(base: UIViewController,title:String,message:String){
         let alertVC = UIAlertController(
             title: title,

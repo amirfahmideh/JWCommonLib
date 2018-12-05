@@ -36,7 +36,7 @@ open class JWRoundedButton:UIButton {
     }
     
     
-    private func setBgColorForState(color: UIColor?, forState: UIControlState){
+    private func setBgColorForState(color: UIColor?, forState: UIControl.State){
         if color != nil {
             setBackgroundImage(UIImage.imageWithColor(color: color!), for: forState)
             

@@ -10,8 +10,8 @@ import UIKit
 
 public class Base64Image {
     public static func convertImageToBase64(image: UIImage) -> String {
-        let imageData = image.UIImagePNGRepresentation(_:)
-        return imageData?.base64EncodedString()
+        let imageData = image.pngData()
+        return (imageData?.base64EncodedString())!
     }
     //
     // Convert base64 to String

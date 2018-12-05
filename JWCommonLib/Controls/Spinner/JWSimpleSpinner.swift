@@ -15,7 +15,7 @@ public class JWSimpleSpinner{
         spinner.layer.cornerRadius = 5.0
         spinner.clipsToBounds = true
         spinner.hidesWhenStopped = true
-        spinner.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.whiteLarge;
+        spinner.style = UIActivityIndicatorView.Style.whiteLarge;
         spinner.center = view.center
         view.addSubview(spinner)
         spinner.startAnimating()
