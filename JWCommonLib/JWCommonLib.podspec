@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "JWCommonLib"
-  s.version      = "1.0.0"
+  s.version      = "1.1"
   s.summary      = "library for managing useful codes and extension to use in all projects "
 
    s.description  = <<-DESC
@@ -14,7 +14,7 @@ DESC
   s.source       = { :git => "https://github.com/amirfahmideh/JWCommonLib.git", :tag => "#{s.version}" }
   s.source_files  = "JWCommonLib/**/*.swift"
   s.exclude_files = "Classes/Exclude"
-  s.swift_version = "4.1"
+  s.swift_version = "4.2"
   s.license      = { :type => 'Apache License, Version 2.0', :text => <<-LICENSE
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2303282621C1018200084C18 /* JWTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303282521C1018200084C18 /* JWTextView.swift */; };
 		230DF94A2187AF0C00DC15DF /* JWSimpleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230DF9492187AF0C00DC15DF /* JWSimpleTableViewController.swift */; };
 		233EE9F82188772E00EC1844 /* JWLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233EE9F72188772E00EC1844 /* JWLabel.swift */; };
 		23446554219D3F2F0055AFB4 /* JWPersianDatepicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23446553219D3F2F0055AFB4 /* JWPersianDatepicker.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2303282521C1018200084C18 /* JWTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTextView.swift; sourceTree = "<group>"; };
 		230DF9492187AF0C00DC15DF /* JWSimpleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWSimpleTableViewController.swift; sourceTree = "<group>"; };
 		233EE9F72188772E00EC1844 /* JWLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWLabel.swift; sourceTree = "<group>"; };
 		23446553219D3F2F0055AFB4 /* JWPersianDatepicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWPersianDatepicker.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 		23633D5E21465812009DB8FB /* TextView */ = {
 			isa = PBXGroup;
 			children = (
+				2303282521C1018200084C18 /* JWTextView.swift */,
 				23633D5F21465824009DB8FB /* JWRoundedTextView.swift */,
 			);
 			path = TextView;
@@ -342,6 +345,7 @@
 				2358522921B7E8A900A4CEA6 /* EFImageViewZoom.swift in Sources */,
 				23446554219D3F2F0055AFB4 /* JWPersianDatepicker.swift in Sources */,
 				23CFFE432143CFBD0038F28D /* JWBaseUIViewController.swift in Sources */,
+				2303282621C1018200084C18 /* JWTextView.swift in Sources */,
 				23633D56214656E3009DB8FB /* PersianDateTime.swift in Sources */,
 				235BDD8721A52BD70034A5EB /* PersianNumberExtension.swift in Sources */,
 				23633D642146585F009DB8FB /* ColorExtension.swift in Sources */,
