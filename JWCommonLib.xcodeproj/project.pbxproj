@@ -24,6 +24,7 @@
 		23633D6021465824009DB8FB /* JWRoundedTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23633D5F21465824009DB8FB /* JWRoundedTextView.swift */; };
 		23633D642146585F009DB8FB /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23633D632146585F009DB8FB /* ColorExtension.swift */; };
 		23633D6721465885009DB8FB /* JWRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23633D6621465885009DB8FB /* JWRoundedButton.swift */; };
+		2364840221CB5BF6003E7CD6 /* JWBaseModalUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2364840121CB5BF6003E7CD6 /* JWBaseModalUIViewController.swift */; };
 		237A29412186E934009AAB98 /* JWSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237A29402186E934009AAB98 /* JWSwitch.swift */; };
 		238FC61C2184274800A87958 /* JWScrollview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238FC61B2184274800A87958 /* JWScrollview.swift */; };
 		238FC626218450C800A87958 /* JWSimpleMessageDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238FC625218450C800A87958 /* JWSimpleMessageDialog.swift */; };
@@ -49,6 +50,7 @@
 		23633D5F21465824009DB8FB /* JWRoundedTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWRoundedTextView.swift; sourceTree = "<group>"; };
 		23633D632146585F009DB8FB /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		23633D6621465885009DB8FB /* JWRoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWRoundedButton.swift; sourceTree = "<group>"; };
+		2364840121CB5BF6003E7CD6 /* JWBaseModalUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWBaseModalUIViewController.swift; sourceTree = "<group>"; };
 		237A29402186E934009AAB98 /* JWSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWSwitch.swift; sourceTree = "<group>"; };
 		238FC61B2184274800A87958 /* JWScrollview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWScrollview.swift; sourceTree = "<group>"; };
 		238FC625218450C800A87958 /* JWSimpleMessageDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWSimpleMessageDialog.swift; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				23CFFE422143CFBD0038F28D /* JWBaseUIViewController.swift */,
+				2364840121CB5BF6003E7CD6 /* JWBaseModalUIViewController.swift */,
 			);
 			path = Bases;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 			files = (
 				2358522821B7E8A900A4CEA6 /* Base64Image.swift in Sources */,
 				230DF94A2187AF0C00DC15DF /* JWSimpleTableViewController.swift in Sources */,
+				2364840221CB5BF6003E7CD6 /* JWBaseModalUIViewController.swift in Sources */,
 				2358522A21B7E8A900A4CEA6 /* MimeType.swift in Sources */,
 				23633D5921465765009DB8FB /* ToENNumbers.swift in Sources */,
 				2358522B21B7E8A900A4CEA6 /* EXTUIImage.swift in Sources */,
