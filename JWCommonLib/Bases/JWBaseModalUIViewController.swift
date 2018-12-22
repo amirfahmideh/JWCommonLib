@@ -13,32 +13,51 @@ open class JWBaseModalUIViewController:UIViewController {
     override open func viewDidLoad() {
         super.viewDidLoad()
         
+        
         let backButton = JWRoundedButton(type:.custom)
-        backButton.frame = CGRectMake(20, 40, 100, 30);
+//                backButton.frame = CGRectMake(20, 40, 70, 30);
+        backButton.frame = CGRect.zero
         backButton.setTitle("بازگشت", for: .normal)
-        backButton.setTitleColor(UIColor.red, for: .normal)
+        //normalj
+        backButton.setTitleColor(UIColor(rgb:0x3c577A), for: .normal)
+        backButton.normalBorderColor = UIColor(rgb:0x3c577A)
+        backButton.normalBackgroundColor = UIColor.lightGray.withAlphaComponent(0.5)
+        //highlight
         backButton.setTitleColor(UIColor.white, for: .highlighted)
-        
+        backButton.highlightedBorderColor =  UIColor(rgb:0x3c577A)
+        backButton.highlightedBackgroundColor =  UIColor(rgb:0x3c577A)
+        //border
         backButton.borderWidth = 1
-        backButton.normalBorderColor = .red
-        backButton.normalBackgroundColor = UIColor.white
-        backButton.highlightedBorderColor = .red
-        backButton.highlightedBackgroundColor = .red
-        backButton.tintColor = UIColor.white
-        backButton.cornerRadius = 6
+        backButton.cornerRadius = 5
         
-        backButton.titleLabel?.font = UIFont(name:"IranSansMobile",size:14)
+        
+        backButton.titleLabel?.font = UIFont(name:"IranSansMobile",size:16)
         backButton.addTarget(self, action: #selector(backToPreviewNavigation(sender:)), for: UIButton.Event.touchUpInside)
         self.view.addSubview(backButton)
         
-        //        backButton.topAnchor.constraint(equalTo: self.view.topAnchor,constant:0).isActive = true
-        //        backButton.leftAnchor.constraint(equalTo: self.view.leftAnchor,constant:0).isActive = true
+        //Back button position in view
+        backButton.translatesAutoresizingMaskIntoConstraints = false
+
+        if #available(iOS 11, *) {
+            let guide = view.safeAreaLayoutGuide
+            backButton.topAnchor.constraint(equalTo: guide.topAnchor,constant:20).isActive = true
+            backButton.leadingAnchor.constraint(equalTo: guide.leadingAnchor,constant:20).isActive = true
+            
+        } else {
+            let standardSpacing: CGFloat = 20.0
+            backButton.topAnchor.constraint(equalTo: self.view.topAnchor,constant:standardSpacing).isActive = true
+            backButton.leadingAnchor.constraint(equalTo: self.view.leadingAnchor,constant:standardSpacing).isActive = true
+        }
+        
+        backButton.widthAnchor.constraint(equalToConstant: 70).isActive = true
+        backButton.heightAnchor.constraint(equalToConstant: 30).isActive = true
     }
     override open func viewWillAppear (_ animated: Bool){
         super.viewWillAppear(false)
     }
     
     @objc func backToPreviewNavigation(sender:Any){
+        //because it is pop view we should dismiss it!
         self.dismiss(animated: true, completion: nil)
     }
     
