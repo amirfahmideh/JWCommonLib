@@ -1,9 +1,25 @@
 import UIKit
-public extension NSNumber {
+public extension Float {
     public func ToPersianNumber() -> String? {
-        let Formatter = NumberFormatter()
-        Formatter.locale = NSLocale(localeIdentifier: "IR") as Locale?
-        let final = Formatter.string(from: self)
-        return final
+        let nf = NumberFormatter()
+        nf.numberStyle = .none
+        nf.locale = Locale(identifier: "fa_IR")
+        return nf.string(for: self) ?? ""
+    }
+}
+public extension String {
+    public func ToPersianNumber() -> String? {
+        let nf = NumberFormatter()
+        nf.numberStyle = .none
+        nf.locale = Locale(identifier: "fa_IR")
+        return nf.string(for: self) ?? ""
+    }
+}
+public extension Decimal {
+    public func ToPersianNumber() -> String? {
+        let nf = NumberFormatter()
+        nf.numberStyle = .none
+        nf.locale = Locale(identifier: "fa_IR")
+        return nf.string(for: self) ?? ""
     }
 }

@@ -28,10 +28,10 @@ open class JWBaseModalUIViewController:UIViewController {
         backButton.highlightedBackgroundColor =  UIColor(rgb:0x3c577A)
         //border
         backButton.borderWidth = 1
-        backButton.cornerRadius = 5
+        backButton.cornerRadius = 2
         
         
-        backButton.titleLabel?.font = UIFont(name:"IranSansMobile",size:16)
+        backButton.titleLabel?.font = UIFont(name:"IranSansMobile",size:12)
         backButton.addTarget(self, action: #selector(backToPreviewNavigation(sender:)), for: UIButton.Event.touchUpInside)
         self.view.addSubview(backButton)
         
@@ -49,8 +49,8 @@ open class JWBaseModalUIViewController:UIViewController {
             backButton.leadingAnchor.constraint(equalTo: self.view.leadingAnchor,constant:standardSpacing).isActive = true
         }
         
-        backButton.widthAnchor.constraint(equalToConstant: 70).isActive = true
-        backButton.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        backButton.widthAnchor.constraint(equalToConstant: 50).isActive = true
+        backButton.heightAnchor.constraint(equalToConstant: 20).isActive = true
     }
     override open func viewWillAppear (_ animated: Bool){
         super.viewWillAppear(false)

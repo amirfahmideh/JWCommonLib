@@ -11,6 +11,7 @@
 		230DF94A2187AF0C00DC15DF /* JWSimpleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230DF9492187AF0C00DC15DF /* JWSimpleTableViewController.swift */; };
 		233EE9F82188772E00EC1844 /* JWLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233EE9F72188772E00EC1844 /* JWLabel.swift */; };
 		23446554219D3F2F0055AFB4 /* JWPersianDatepicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23446553219D3F2F0055AFB4 /* JWPersianDatepicker.swift */; };
+		234D6E2721DC7D2C002A9D36 /* ToPersianMoney.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234D6E2621DC7D2C002A9D36 /* ToPersianMoney.swift */; };
 		2358522721B7E8A900A4CEA6 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2358522121B7E8A800A4CEA6 /* ImageHelper.swift */; };
 		2358522821B7E8A900A4CEA6 /* Base64Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2358522221B7E8A800A4CEA6 /* Base64Image.swift */; };
 		2358522921B7E8A900A4CEA6 /* EFImageViewZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2358522321B7E8A800A4CEA6 /* EFImageViewZoom.swift */; };
@@ -37,6 +38,7 @@
 		230DF9492187AF0C00DC15DF /* JWSimpleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWSimpleTableViewController.swift; sourceTree = "<group>"; };
 		233EE9F72188772E00EC1844 /* JWLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWLabel.swift; sourceTree = "<group>"; };
 		23446553219D3F2F0055AFB4 /* JWPersianDatepicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWPersianDatepicker.swift; sourceTree = "<group>"; };
+		234D6E2621DC7D2C002A9D36 /* ToPersianMoney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToPersianMoney.swift; sourceTree = "<group>"; };
 		2358522121B7E8A800A4CEA6 /* ImageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		2358522221B7E8A800A4CEA6 /* Base64Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base64Image.swift; sourceTree = "<group>"; };
 		2358522321B7E8A800A4CEA6 /* EFImageViewZoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EFImageViewZoom.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 		235BDD8521A52B890034A5EB /* Number */ = {
 			isa = PBXGroup;
 			children = (
+				234D6E2621DC7D2C002A9D36 /* ToPersianMoney.swift */,
 				235BDD8621A52BD70034A5EB /* PersianNumberExtension.swift */,
 			);
 			path = Number;
@@ -345,6 +348,7 @@
 				2364840221CB5BF6003E7CD6 /* JWBaseModalUIViewController.swift in Sources */,
 				2358522A21B7E8A900A4CEA6 /* MimeType.swift in Sources */,
 				23633D5921465765009DB8FB /* ToENNumbers.swift in Sources */,
+				234D6E2721DC7D2C002A9D36 /* ToPersianMoney.swift in Sources */,
 				2358522B21B7E8A900A4CEA6 /* EXTUIImage.swift in Sources */,
 				2358522921B7E8A900A4CEA6 /* EFImageViewZoom.swift in Sources */,
 				23446554219D3F2F0055AFB4 /* JWPersianDatepicker.swift in Sources */,

@@ -22,4 +22,6 @@ public extension String {
         let decimalN:String = Formatter.string(from: final!)!
         return Decimal(string:decimalN)
     }
+    
+  
 }

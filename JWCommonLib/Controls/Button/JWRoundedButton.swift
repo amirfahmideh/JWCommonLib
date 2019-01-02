@@ -2,24 +2,24 @@ import UIKit
 
 @IBDesignable
 open class JWRoundedButton:UIButton {
-    @IBInspectable var cornerRadius: CGFloat = 4 {
+    @IBInspectable open var cornerRadius: CGFloat = 4 {
         didSet {
             layer.cornerRadius = cornerRadius
         }
     }
-    @IBInspectable var borderWidth: CGFloat = 0 {
+    @IBInspectable open var borderWidth: CGFloat = 0 {
         didSet {
             layer.borderWidth = borderWidth
         }
     }
     //Normal state bg and border
-    @IBInspectable var normalBorderColor: UIColor? {
+    @IBInspectable open var normalBorderColor: UIColor? {
         didSet {
             layer.borderColor = normalBorderColor?.cgColor
         }
     }
     
-    @IBInspectable var normalBackgroundColor: UIColor? {
+    @IBInspectable open var normalBackgroundColor: UIColor? {
         didSet {
             setBgColorForState(color: normalBackgroundColor, forState: .normal)
         }
@@ -27,9 +27,9 @@ open class JWRoundedButton:UIButton {
     
     
     //Highlighted state bg and border
-    @IBInspectable var highlightedBorderColor: UIColor?
+    @IBInspectable open var highlightedBorderColor: UIColor?
     
-    @IBInspectable var highlightedBackgroundColor: UIColor? {
+    @IBInspectable open var highlightedBackgroundColor: UIColor? {
         didSet {
             setBgColorForState(color: highlightedBackgroundColor, forState: .highlighted)
         }
