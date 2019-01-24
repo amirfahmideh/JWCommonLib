@@ -18,39 +18,29 @@ open class JWRoundedButton:UIButton {
             layer.borderColor = normalBorderColor?.cgColor
         }
     }
-    
     @IBInspectable open var normalBackgroundColor: UIColor? {
         didSet {
             setBgColorForState(color: normalBackgroundColor, forState: .normal)
         }
     }
-    
-    
     //Highlighted state bg and border
     @IBInspectable open var highlightedBorderColor: UIColor?
-    
     @IBInspectable open var highlightedBackgroundColor: UIColor? {
         didSet {
             setBgColorForState(color: highlightedBackgroundColor, forState: .highlighted)
         }
     }
-    
-    
     private func setBgColorForState(color: UIColor?, forState: UIControl.State){
         if color != nil {
             setBackgroundImage(UIImage.imageWithColor(color: color!), for: forState)
-            
         } else {
             setBackgroundImage(nil, for: forState)
         }
     }
-    
     override open func layoutSubviews() {
         super.layoutSubviews()
-        
         //layer.cornerRadius = layer.frame.height / 4
         clipsToBounds = true
-        
         if borderWidth > 0 {
             if state == .normal && layer.borderColor != normalBorderColor?.cgColor {
                 layer.borderColor = normalBorderColor?.cgColor
@@ -59,7 +49,6 @@ open class JWRoundedButton:UIButton {
             }
         }
     }
-    
 }
 func CGRectMake(_ x: CGFloat, _ y: CGFloat, _ width: CGFloat, _ height: CGFloat) -> CGRect {
     return CGRect(x: x, y: y, width: width, height: height)

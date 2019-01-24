@@ -8,7 +8,7 @@
 
 import UIKit
 open class JWBaseUIViewController:UIViewController {
-    public var MoveOnKeyboardShow:Bool = false;
+    public var MoveOnKeyboardShow:Bool = true;
     
     private var oldOrigin : CGFloat = 0
     private var isFindedScrollView: Bool = false;
