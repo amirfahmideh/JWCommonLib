@@ -19,6 +19,7 @@
 		2358522B21B7E8A900A4CEA6 /* EXTUIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2358522521B7E8A900A4CEA6 /* EXTUIImage.swift */; };
 		2358522C21B7E8A900A4CEA6 /* JpegResize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2358522621B7E8A900A4CEA6 /* JpegResize.swift */; };
 		235BDD8721A52BD70034A5EB /* PersianNumberExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235BDD8621A52BD70034A5EB /* PersianNumberExtension.swift */; };
+		2362263522003ED8007D854A /* UserDefaultStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2362263422003ED8007D854A /* UserDefaultStorage.swift */; };
 		23633D56214656E3009DB8FB /* PersianDateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23633D55214656E3009DB8FB /* PersianDateTime.swift */; };
 		23633D5921465765009DB8FB /* ToENNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23633D5821465765009DB8FB /* ToENNumbers.swift */; };
 		23633D5D21465806009DB8FB /* JWRoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23633D5C21465806009DB8FB /* JWRoundedTextField.swift */; };
@@ -46,6 +47,7 @@
 		2358522521B7E8A900A4CEA6 /* EXTUIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EXTUIImage.swift; sourceTree = "<group>"; };
 		2358522621B7E8A900A4CEA6 /* JpegResize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JpegResize.swift; sourceTree = "<group>"; };
 		235BDD8621A52BD70034A5EB /* PersianNumberExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersianNumberExtension.swift; sourceTree = "<group>"; };
+		2362263422003ED8007D854A /* UserDefaultStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultStorage.swift; sourceTree = "<group>"; };
 		23633D55214656E3009DB8FB /* PersianDateTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersianDateTime.swift; sourceTree = "<group>"; };
 		23633D5821465765009DB8FB /* ToENNumbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToENNumbers.swift; sourceTree = "<group>"; };
 		23633D5C21465806009DB8FB /* JWRoundedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWRoundedTextField.swift; sourceTree = "<group>"; };
@@ -104,6 +106,14 @@
 				235BDD8621A52BD70034A5EB /* PersianNumberExtension.swift */,
 			);
 			path = Number;
+			sourceTree = "<group>";
+		};
+		2362263322003E87007D854A /* UserDefaultStorage */ = {
+			isa = PBXGroup;
+			children = (
+				2362263422003ED8007D854A /* UserDefaultStorage.swift */,
+			);
+			path = UserDefaultStorage;
 			sourceTree = "<group>";
 		};
 		23633D5221465651009DB8FB /* Extension */ = {
@@ -226,6 +236,7 @@
 		23CFFE392143CEF50038F28D /* JWCommonLib */ = {
 			isa = PBXGroup;
 			children = (
+				2362263322003E87007D854A /* UserDefaultStorage */,
 				23DB9EAA2196A3CB0005F0E1 /* Images */,
 				23633D5A21465794009DB8FB /* Controls */,
 				23633D5221465651009DB8FB /* Extension */,
@@ -343,6 +354,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2362263522003ED8007D854A /* UserDefaultStorage.swift in Sources */,
 				2358522821B7E8A900A4CEA6 /* Base64Image.swift in Sources */,
 				230DF94A2187AF0C00DC15DF /* JWSimpleTableViewController.swift in Sources */,
 				2364840221CB5BF6003E7CD6 /* JWBaseModalUIViewController.swift in Sources */,
