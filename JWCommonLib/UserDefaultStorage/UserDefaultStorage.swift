@@ -13,7 +13,7 @@ public class UserDefaultStorage {
         defaults.set(value, forKey: key)
         defaults.synchronize()
     }
-    public static func Get<T>(type:T.Type, key:String, value:Any) -> T{
+    public static func Get<T>(type:T.Type, key:String) -> T{
         let defaults = UserDefaults.standard
         return defaults.object(forKey: key) as! T
     }
