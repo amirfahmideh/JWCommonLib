@@ -38,9 +38,9 @@ open class JWRoundedTextField:UITextField {
         }
         clipsToBounds = true
         
-        if borderWidth > 0 {
-            layer.borderColor = normalBorderColor?.cgColor
-        }
+//        if borderWidth > 0 {
+//            layer.borderColor = normalBorderColor?.cgColor
+//        }
         
     }
     

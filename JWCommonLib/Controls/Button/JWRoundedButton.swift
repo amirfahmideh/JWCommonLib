@@ -40,6 +40,7 @@ open class JWRoundedButton:UIButton {
     override open func layoutSubviews() {
         super.layoutSubviews()
         //layer.cornerRadius = layer.frame.height / 4
+//        self.buttonType = ButtonType.custom
         clipsToBounds = true
         if borderWidth > 0 {
             if state == .normal && layer.borderColor != normalBorderColor?.cgColor {
