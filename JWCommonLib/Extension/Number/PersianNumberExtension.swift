@@ -23,3 +23,11 @@ public extension Decimal {
         return nf.string(for: self) ?? ""
     }
 }
+public extension Int {
+    public func ToPersianNumber() -> String? {
+        let nf = NumberFormatter()
+        nf.numberStyle = .none
+        nf.locale = Locale(identifier: "fa_IR")
+        return nf.string(for: self) ?? ""
+    }
+}
